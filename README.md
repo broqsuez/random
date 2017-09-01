@@ -1,1 +1,1 @@
-## Simple Quote Random Generator using ReactJS
+## Simple Random Quote Generator using ReactJS
