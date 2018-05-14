@@ -3,6 +3,8 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
 import './App.css';
+import Header from './components/header'
+
 
 class App extends Component {
   constructor() {
@@ -35,7 +37,8 @@ class App extends Component {
       .quote} - ${this.state.author}`;
     return (
       <div className="content">
-        <h1 className="title">Quotes Generator</h1>
+      <Header />
+        
         <div className="app">
           <div className="quote">
             {!this.state.quote ? (
@@ -45,7 +48,7 @@ class App extends Component {
             )}
             <p className="quote__author">
               {' '}
-              &mdash; {this.state.author} &mdash;
+                 {this.state.author} &mdash;
             </p>
           </div>
           <div className="btn-l">
@@ -58,8 +61,9 @@ class App extends Component {
               </a>
             </button>
           </div>
-        </div>
+        </div>.
       </div>
+      
     );
   }
 }
